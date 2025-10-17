@@ -1615,7 +1615,8 @@
       // Expose debug API
       window.MECOM_BRACKET_V2 = {
         getState: ()=> deepCopy(renderData),
-        setState: (obj)=>{ if(Array.isArray(obj)){ renderData = deepCopy(obj); saveState(renderData); renderAll(); } },
+        setState: (obj)=>{ if(Array.
+    isArray(obj)){ renderData = deepCopy(obj); saveState(renderData); renderAll(); } },
         resetDefaults: ()=> { renderData = prepareRenderData(TOURNAMENT_DATA); saveState(renderData); renderAll(); }
       };
     }
