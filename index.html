@@ -18,7 +18,7 @@
     --bg:#f7fbff;
     --blue:#FF1493;
     --blue-2:#FF69B4;
-    --soft:#A7D8FF;
+    --soft:#ffa7dd;
     --muted:#6b7280;
     --card:#ffffff;
     --glass: rgba(255,255,255,0.8);
@@ -285,7 +285,7 @@
   .accordion .content p { margin:0; color:var(--muted); font-size:13px; line-height:1.45; }
 
   /* ИЗМЕНЕНИЕ 1: Цвет текста "Интересный факт" в синий при открытии */
-  .accordion.open .trigger { color: #005BFF; }
+  .accordion.open .trigger { color:var(--blue); }
 
   /* Новый стиль для подписи под диаграммой РИФ */
   .rif-record-label {
@@ -301,9 +301,9 @@
      MECOM BRACKET — улучшенная версия стилей
      =========================================================== */
   .mecom-bracket{
-    --me-blue:#005BFF;
-    --me-blue-2:#2b7bff;
-    --me-soft:#A7D8FF;
+    --me-blue:var(--blue);
+    --me-blue-2:var(--blue-2);
+    --me-soft:var(--soft);
     background: linear-gradient(90deg,rgba(7,48,159,0.03),rgba(0,91,255,0.02));
     border-radius:12px;
     padding:10px;
@@ -348,10 +348,10 @@
 
   .mecom-tag{font-size:11px;font-weight:800;padding:4px 6px;border-radius:999px;line-height:1;display:inline-block}
   .mecom-tag-grade{background:rgba(0,0,0,0.06);color:#111}
-  .mecom-tag-north{background:rgba(0,92,255,0.09);color:var(--blue)}
-  .mecom-tag-south{background:rgba(255,59,59,0.10);color:#c0392b}
-  .mecom-tag-east{background:rgba(255,160,60,0.10);color:#d35400}
-  .mecom-tag-west{background:rgba(88,165,90,0.10);color:#1e9b4a}
+  .mecom-tag-north{background:rgba(0,92,255,0.09);color:#003cff}
+  .mecom-tag-south{background:rgba(255,59,59,0.10);color:#ff1f06}
+  .mecom-tag-east{background:rgba(255,160,60,0.10);color:#ff5100}
+  .mecom-tag-west{background:rgba(88,165,90,0.10);color:#35ff35}
 
   .mecom-team.winner{background:linear-gradient(90deg,var(--me-soft),#dff4ff);box-shadow:0 10px 30px rgba(0,110,255,0.06)}
   .mecom-team.winner .team-name{color:var(--blue)}
@@ -658,7 +658,7 @@
                          a 15.9155 15.9155 0 0 1 0 -31.831"
                       fill="none" stroke="url(#tg)" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="100 100" stroke-dashoffset="100"></path>
                 <defs>
-                  <linearGradient id="tg" x1="0" x2="1"><stop offset="0" stop-color="#005BFF"/><stop offset="1" stop-color="#2b7bff"/></linearGradient>
+                  <linearGradient id="tg" x1="0" x2="1"><stop offset="0" stop-color="var(--blue)"/><stop offset="1" stop-color="var(--blue-2)"/></linearGradient>
                 </defs>
                 <text x="18" y="21" font-size="8" text-anchor="middle" fill="#0b234d" font-weight="800" id="totalDonutText">0</text>
               </svg>
@@ -1684,4 +1684,3 @@
 </script>
 </body>
 </html>
-
